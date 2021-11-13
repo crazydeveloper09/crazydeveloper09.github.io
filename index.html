@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b2ec1cb26d.js" crossorigin="anonymous" async></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Menu - zadanie rekrutacyjne w Kato SH</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="logo">
+                <img src="izimoto.png" alt="logo" />
+            </div>
+
+            <div class="search">
+                <input type="search" placeholder="Wpisz nazwę części" />
+                <button id="submit">
+                    <i class="fas fa-search"></i>
+                    Szukaj
+                </button>
+            </div>
+
+            <div class="categories">
+                <a href="#">
+                    Przeglądaj kategorie
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="right">
+            <button id="send">
+                <i class="fas fa-hand-holding icon"></i>
+                Sprzedaj
+            </button>
+            <div>
+                <button id="dropdown-button">
+                    <img src="avatar.png" alt="avatar">
+                </button>
+            </div>
+            <div id="dropdown">
+                <div class="dropdown-header-mobile">
+                    <div>
+                        <button id="send">
+                            <i class="fas fa-hand-holding icon"></i>
+                            Sprzedaj
+                        </button>
+                    </div>
+                    <div>
+                        <i class="fas fa-times icon" id="close"></i>
+                    </div>
+                    
+                    
+                </div>
+                <a href="#" class="dropdown-item">
+                    <i class="fas fa-user icon"></i>
+                    Moje konto
+                </a>
+                <a href="#" class="dropdown-item">
+                    <i class="fas fa-shopping-cart icon"></i>
+                    Historia zakupów
+                </a>
+                <a href="#" class="dropdown-item">
+                    <i class="fas fa-box-open icon"></i>
+                    Moje oferty
+                </a>
+                <a href="#" class="dropdown-item">
+                    <i class="fas fa-comment-dots icon"></i>
+                    Komentarze
+                    <span class="notifications">16</span>
+                </a>
+                <a href="#" class="dropdown-item">
+                    <i class="fas fa-cog icon"></i>
+                    Zarządzenie kontem
+                </a>
+                <hr />
+                <a href="#" class="dropdown-item">
+                    <i class="fas fa-power-off  icon" style="color: white;"></i>
+                    Wyloguj
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

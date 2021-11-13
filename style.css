@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    background: #000;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 70px;
+}
+
+.left {
+
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    width: 260px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-left: 15px;
+}
+
+#send {
+    color: white;
+    border: 3px solid #21acff;
+    padding: 12px;
+    background: transparent;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+
+#submit {
+    background: #f90f17;
+    border: 1px solid #f90f17;
+    color: white;
+    padding: 7.8px;
+    border-radius: 6px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    font-size: 18px;
+    position: absolute;
+    font-weight: 100;
+}
+
+
+
+input[type="search"] {
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    width: 80%;
+    margin-left: 30px;
+}
+
+.categories a {
+    color: white;
+    text-decoration: none;
+}
+
+.categories {
+    margin-left: 140px;
+
+
+}
+
+#dropdown {
+    background: #2e2e2e;
+    padding: 40px;
+    position: fixed;
+    top: 70px;
+}
+
+#dropdown-button {
+    background: none;
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 8.5px;
+    margin-left: 10px;
+}
+
+#dropdown-button:hover,
+#dropdown-button:focus {
+    background: #2e2e2e;
+}
+
+#dropdown-button .avatar {
+
+    border-radius: 50%;
+}
+
+#dropdown .dropdown-item {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+
+    line-height: 40px;
+    font-weight: 100;
+}
+
+#dropdown .dropdown-item:last-of-type {
+    text-align: center;
+}
+
+#dropdown .dropdown-item .notifications {
+    background: #21acff;
+    border-radius: 50%;
+    padding: 3px;
+    text-align: center;
+}
+.dropdown-header-mobile {
+    display: none;
+}
+.icon {
+    margin-right: 10px;
+    color: #21acff;
+    font-size: 22px;
+}
+
+hr {
+    border: 1px solid #585858;
+
+}
+
+@media (max-width: 992px) {
+    .logo img {
+        width: 150px;
+
+    }
+
+    .search,
+    .categories {
+        display: none;
+    }
+
+    #dropdown {
+        height: 100vh;
+        top: 0;
+        right: 0;
+        width: 60%;
+    }
+
+    .left {
+        width: 120%;
+    }
+    .dropdown-header-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    #send {
+        padding: 7px;
+        margin-right: 15px;
+        
+    }
+
+    #close {
+        color: white;
+        font-size: 30px;
+    }
+}
